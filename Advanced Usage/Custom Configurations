@@ -1,0 +1,8 @@
+# Start with custom CIDR
+minikube start --service-cluster-ip-range=10.96.0.0/16
+
+# Configure API server
+minikube start --extra-config=apiserver.enable-admission-plugins=NamespaceLifecycle,ResourceQuota
+
+# Use custom image repository
+minikube start --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers
