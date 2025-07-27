@@ -1,0 +1,11 @@
+# View Minikube logs
+minikube logs
+
+# Follow Minikube logs
+minikube logs -f
+
+# View logs for specific component
+minikube logs --component=kubelet
+
+# View pod logs
+kubectl logs -f deployment/my-app
