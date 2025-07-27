@@ -1,0 +1,23 @@
+# Start a basic cluster
+minikube start
+
+# Start with specific Kubernetes version
+minikube start --kubernetes-version=v1.28.0
+
+# Start with custom resources
+minikube start --memory=4096 --cpus=2 --disk-size=20g
+
+# Start with specific driver
+minikube start --driver=docker
+
+# Start with multiple nodes
+minikube start --nodes=3
+
+# Stop the cluster
+minikube stop
+
+# Delete the cluster
+minikube delete
+
+# Delete all clusters
+minikube delete --all
