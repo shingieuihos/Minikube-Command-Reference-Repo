@@ -1,0 +1,15 @@
+# Check cluster status
+minikube status
+
+# Get cluster info
+minikube profile list
+
+# Get cluster IP
+minikube ip
+
+# Get kubectl context
+minikube update-context
+
+# Verify cluster health
+kubectl get nodes
+kubectl cluster-info
