@@ -1,0 +1,11 @@
+# Configure memory (requires restart)
+minikube config set memory 8192
+
+# Configure CPUs (requires restart)
+minikube config set cpus 4
+
+# Configure disk size (requires restart)
+minikube config set disk-size 30g
+
+# View current configuration
+minikube config view
