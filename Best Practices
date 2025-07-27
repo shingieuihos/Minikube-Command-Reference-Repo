@@ -1,0 +1,6 @@
+Resource Management: Always configure appropriate memory and CPU limits
+Profile Usage: Use profiles for different environments (dev, test, staging)
+Add-on Management: Only enable necessary add-ons to conserve resources
+Regular Cleanup: Periodically clean up unused resources and images
+Version Pinning: Use specific Kubernetes versions for consistency
+Backup Important Data: Use persistent volumes for stateful applications
