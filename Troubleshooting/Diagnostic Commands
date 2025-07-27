@@ -1,0 +1,14 @@
+# Check system requirements
+minikube status --format='{{.Host}}'
+
+# Verify Docker daemon
+minikube docker-env
+eval $(minikube docker-env)
+
+# Reset cluster
+minikube stop
+minikube delete
+minikube start
+
+# Clear cache
+minikube delete --all --purge
