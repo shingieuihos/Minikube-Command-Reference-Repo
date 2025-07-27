@@ -1,0 +1,11 @@
+# Configure shell to use Minikube's Docker daemon
+eval $(minikube docker-env)
+
+# Build image directly in Minikube
+docker build -t my-app:latest .
+
+# List images in Minikube
+docker images
+
+# Reset to host Docker daemon
+eval $(minikube docker-env -u)
