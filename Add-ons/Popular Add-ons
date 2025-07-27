@@ -1,0 +1,12 @@
+# Metrics Server (for kubectl top)
+minikube addons enable metrics-server
+
+# Registry (local Docker registry)
+minikube addons enable registry
+minikube addons enable registry-aliases
+
+# EFK Stack (Elasticsearch, Fluentd, Kibana)
+minikube addons enable efk
+
+# Istio service mesh
+minikube addons enable istio
