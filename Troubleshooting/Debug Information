@@ -1,0 +1,11 @@
+# Get comprehensive debug info
+minikube logs --length=50
+
+# Check component status
+kubectl get componentstatuses
+
+# Verify API server
+kubectl cluster-info dump
+
+# Check node conditions
+kubectl describe nodes | grep -A 5 Conditions
