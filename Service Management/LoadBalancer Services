@@ -1,0 +1,8 @@
+# Enable MetalLB for LoadBalancer support
+minikube addons enable metallb
+
+# Configure MetalLB IP range
+minikube addons configure metallb
+
+# Create LoadBalancer service
+kubectl expose deployment my-app --type=LoadBalancer --port=80
