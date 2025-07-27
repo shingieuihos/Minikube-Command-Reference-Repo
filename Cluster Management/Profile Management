@@ -1,0 +1,11 @@
+# Create a new profile
+minikube start -p my-profile
+
+# List all profiles
+minikube profile list
+
+# Switch to a profile
+minikube profile my-profile
+
+# Delete a specific profile
+minikube delete -p my-profile
