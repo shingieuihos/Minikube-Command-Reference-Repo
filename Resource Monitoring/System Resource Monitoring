@@ -1,0 +1,15 @@
+# SSH into Minikube node
+minikube ssh
+
+# Once inside the node:
+# - Check system resources
+top
+htop
+df -h
+
+# Check Docker containers
+docker ps
+docker stats
+
+# Exit SSH session
+exit
