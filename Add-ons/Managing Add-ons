@@ -1,0 +1,14 @@
+# List available add-ons
+minikube addons list
+
+# Enable specific add-ons
+minikube addons enable metrics-server
+minikube addons enable ingress
+minikube addons enable dashboard
+minikube addons enable registry
+
+# Disable add-ons
+minikube addons disable metrics-server
+
+# Configure add-ons
+minikube addons configure registry
