@@ -1,0 +1,4 @@
+minikube config set memory 4096  # Set memory
+minikube config set cpus 2        # Set CPUs
+minikube config view              # View config
+minikube profile list             # List profiles
