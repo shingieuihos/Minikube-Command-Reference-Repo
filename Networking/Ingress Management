@@ -1,0 +1,11 @@
+# Enable Ingress controller
+minikube addons enable ingress
+
+# Verify Ingress controller
+kubectl get pods -n ingress-nginx
+
+# Create Ingress resource
+kubectl apply -f my-ingress.yaml
+
+# Get Ingress info
+kubectl get ingress
