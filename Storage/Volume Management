@@ -1,0 +1,11 @@
+# Create persistent volume
+kubectl apply -f pv.yaml
+
+# List persistent volumes
+kubectl get pv
+
+# List persistent volume claims
+kubectl get pvc
+
+# Mount host directory as volume
+minikube mount /host/data:/data
