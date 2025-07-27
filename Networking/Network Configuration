@@ -1,0 +1,12 @@
+# Start with custom network
+minikube start --network-plugin=cni
+
+# Configure DNS
+minikube start --dns-domain=my-domain.local
+
+# Get cluster network info
+kubectl get services --all-namespaces
+kubectl get endpoints --all-namespaces
+
+# Check network policies
+kubectl get networkpolicies --all-namespaces
