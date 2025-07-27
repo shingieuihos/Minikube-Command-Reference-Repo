@@ -1,0 +1,8 @@
+# Check Minikube version
+minikube version
+
+# Check if virtualization is supported
+minikube config view
+
+# Set default driver (Docker, VirtualBox, etc.)
+minikube config set driver docker
