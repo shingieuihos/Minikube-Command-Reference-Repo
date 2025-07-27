@@ -1,0 +1,11 @@
+# Start multi-node cluster
+minikube start --nodes=3 --container-runtime=docker
+
+# Add worker node
+minikube node add --worker
+
+# Delete specific node
+minikube node delete m02
+
+# List cluster nodes
+minikube node list
