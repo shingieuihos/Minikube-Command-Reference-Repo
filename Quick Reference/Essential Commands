@@ -1,0 +1,10 @@
+minikube start                    # Start cluster
+minikube stop                     # Stop cluster
+minikube status                   # Check status
+minikube dashboard                # Open dashboard
+minikube service <service-name>   # Access service
+minikube addons list              # List add-ons
+minikube ip                       # Get cluster IP
+minikube ssh                      # SSH into node
+minikube logs                     # View logs
+minikube delete                   # Delete cluster
