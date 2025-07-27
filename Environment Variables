@@ -1,0 +1,11 @@
+# Set driver permanently
+export MINIKUBE_DRIVER=docker
+
+# Set memory allocation
+export MINIKUBE_MEMORY=4096
+
+# Set default namespace
+export MINIKUBE_NAMESPACE=default
+
+# Disable emoji output
+export MINIKUBE_IN_STYLE=false
