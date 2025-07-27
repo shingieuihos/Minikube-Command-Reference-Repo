@@ -1,0 +1,14 @@
+# Fix permission issues (Linux/macOS)
+sudo chown -R $USER ~/.minikube
+
+# Reset Docker environment
+eval $(minikube docker-env -u)
+
+# Fix memory issues
+minikube config set memory 4096
+minikube delete
+minikube start
+
+# Fix disk space issues
+minikube config set disk-size 30g
+docker system prune -a
