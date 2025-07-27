@@ -1,0 +1,12 @@
+# Open Kubernetes dashboard
+minikube dashboard
+
+# Open dashboard with specific URL binding
+minikube dashboard --url
+
+# View cluster resource usage
+kubectl top nodes
+kubectl top pods --all-namespaces
+
+# Get detailed node information
+kubectl describe nodes
